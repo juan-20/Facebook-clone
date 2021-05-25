@@ -1,9 +1,9 @@
-<div class="login-container">
+<div class="login">
 
   <header class="login-header">
     <div class="login-header-left">
       <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="logo">
-      <h2>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h2>
+      <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
     </div>
 
 
@@ -15,17 +15,19 @@
           <input type="text" name="email" placeholder="Email">
           <input type="password" name="password" placeholder="Senha">
 
-          <button type="submit" class="btn" [disabled]="form.invalid || form.pending">Entrar</button>
+          <button type="submit" class="btn">Entrar</button>
 
           <a href="#">Esqueceu a senha?</a>
 
         </form>
+        <div class="login-header-right-form-btn">
+          <button (click)="openRegister()">Criar nova conta</button>
+        </div>
 
-        <button class="login-header-right-createbtn" (click)="openRegister()">Criar nova conta</button>
 
       </div>
 
-      <p>Criar uma Página para uma celebridade, banda ou empresa.</p>
+      <p> <span> Criar uma Página </span> para uma celebridade, banda ou empresa.</p>
 
     </div>
   </header>

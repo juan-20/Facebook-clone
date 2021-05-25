@@ -1,0 +1,129 @@
+@import "src/styles";
+
+* {
+    ::placeholder {
+        color: #90949c;
+        text-indent: 1em;
+        font-size: 17px;
+    }
+
+    input {
+        text-indent: 1.3em;
+    }
+
+    input:focus {
+        border: 4px solid #e7f3ff !important;
+        color: #cdd1d5;
+    }
+}
+.login {
+    background: $body-color;
+    &-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        &-left {
+            background: none;
+            width: 400px;
+            height: 300px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            padding: 20px 0 0px;
+            img {
+                width: 65%;
+                padding: 0 0 20px 0;
+                margin: -28px;
+            }
+            > p {
+                line-height: 28px;
+                font-size: 24px;
+                margin: 0 !important;
+            }
+        }
+
+        &-right {
+            background: $white;
+            width: 400px;
+            height: 400px;
+            -webkit-box-shadow: 0 4px 4px rgba(0, 10, 0, 0.5) 0 8px 16px rgba(0, 10, 0, 0.5);
+            box-shadow: 0 2px 4px rgba(0, 10, 0, 0.5);
+            border-radius: 8px;
+            &-form {
+                &-content {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 16px;
+                    border: 2px solid $border;
+                    input {
+                        height: 52px;
+                        margin: 15px 10px 15px 10px;
+                        border: 2px solid $border;
+                        outline: none;
+                        background: $white;
+                        border-radius: 6px;
+                    }
+                    > button {
+                        height: 52px;
+                        margin: 15px 10px 15px 10px;
+                        border-radius: 6px;
+                        background: $primary-button-color;
+                        border: none;
+                        outline: none;
+                        font-size: 20px;
+                        color: $white;
+                    }
+
+                    > a {
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+                    }
+                }
+                &-btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    > button {
+                        height: 52px;
+                        margin: 15px 10px 15px 10px;
+                        border-radius: 6px;
+                        font-weight: 700;
+                        border: none;
+                        outline: none;
+                        font-size: 17px;
+                        color: $white;
+                        background: $success-button-color;
+                    }
+                }
+            }
+
+            > p {
+                font-size: 14px;
+                margin-top: 28px;
+                color: $color;
+                > span {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        &-header {
+            flex-direction: column;
+            &-left {
+                margin-right: 0 !important;
+                margin-bottom: 0 !important;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+}

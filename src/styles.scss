@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* btn */
+$primary-button-color: #1877f2;
+$success-button-color: #42b72a;
+$border: #dddfe2;
+
+/* outras cores */
+$white: white;
+$body-color: #f0f2f5;
+
+// fonte
+$color: #1d2129;
