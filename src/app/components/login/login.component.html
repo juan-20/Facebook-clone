@@ -10,12 +10,12 @@
     <div class="login-header-right">
 
       <div class="login-header-right-form">
-        <form class="login-header-right-form-content">
+        <form [formGroup]="formgroup" class="login-header-right-form-content">
 
-          <input type="text" name="email" placeholder="Email">
-          <input type="password" name="password" placeholder="Senha">
+          <input formControlName="email" type="text" name="email" placeholder="Email">
+          <input formControlName="password" type="password" name="password" placeholder="Senha">
 
-          <button type="submit" class="btn">Entrar</button>
+          <button (click)="login()" type="submit" class="btn">Entrar</button>
 
           <a href="#">Esqueceu a senha?</a>
 

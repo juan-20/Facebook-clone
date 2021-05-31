@@ -1,0 +1,18 @@
+@import "src/styles";
+
+* {
+    ::placeholder {
+        color: #90949c;
+        text-indent: 1em;
+        font-size: 17px;
+    }
+
+    input {
+        text-indent: 1.3em;
+    }
+
+    input:focus {
+        border: 4px solid #e7f3ff !important;
+        color: #cdd1d5;
+    }
+}
