@@ -1,0 +1,72 @@
+@import "src/styles";
+
+* {
+    ::placeholder {
+        color: #90949c;
+        text-indent: 1.7em;
+        font-size: 17px;
+    }
+
+    input {
+        text-indent: 2.2em;
+    }
+    overflow: hidden;
+}
+
+.header {
+    color: $white;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        > img {
+            height: 50px;
+            width: 80px;
+        }
+        > i {
+            color: #666c76;
+            position: absolute;
+            margin-left: 90px;
+        }
+        input {
+            background: #f0f2f5;
+            width: 240px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+        }
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        svg {
+            justify-content: center;
+            fill: #1877f2;
+            margin-right: 25px;
+            margin-left: 25px;
+            border-radius: 6px;
+        }
+        span:hover {
+            background: #f2f2f2;
+            border-radius: 6px;
+        }
+    }
+
+    &-end {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #666c76;
+    }
+}
+
+body {
+    background: #f0f2f5;
+}

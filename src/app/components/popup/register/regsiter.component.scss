@@ -17,3 +17,75 @@
     }
     overflow: hidden;
 }
+
+.register {
+    &-header {
+        h1 {
+            margin: 15px 10px 15px 10px;
+        }
+        p {
+            margin: 15px 10px 15px 10px;
+        }
+
+        border: 1px solid #cdd1d5;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        &-name {
+            display: flex;
+            input {
+                width: 50%;
+                height: 52px;
+                margin: 15px 10px 15px 10px;
+                border: 2px solid $border;
+                outline: none;
+                background: $white;
+                border-radius: 6px;
+            }
+        }
+
+        input {
+            width: 98, 9%;
+            height: 52px;
+            margin: 15px 10px 15px 10px;
+            border: 2px solid $border;
+            outline: none;
+            border-radius: 6px;
+        }
+
+        > p {
+            font-size: 11px;
+            color: #777;
+            margin: 15px 10px 15px 10px;
+            > span {
+                color: #385898;
+                cursor: pointer;
+            }
+        }
+
+        &-submit {
+            display: flex;
+            justify-content: center;
+            input[type="submit"] {
+                width: 50%;
+                background: none;
+                background-color: #00a400;
+                border: none;
+                border-radius: 6px;
+                box-shadow: none;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                height: 36px;
+                overflow: hidden;
+                text-shadow: none;
+                cursor: pointer;
+                &:hover {
+                    background: linear-gradient(#67ae55, #578843);
+                }
+            }
+        }
+    }
+}
