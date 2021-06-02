@@ -75,6 +75,41 @@
 
 <body>
 
+
+  <div class="contanet">
+
+    <div class="content-side-bar">
+
+    </div>
+
+    <div class="content-posts">
+      <div class="stories">
+
+      </div>
+
+      <div class="content-posts-input">
+        <img src="https://pbs.twimg.com/profile_images/1399119031571996675/moRLSUtU_400x400.jpg" alt="">
+
+        <form [formGroup]="data.formgroup">
+          <input formControlName="message" type="text">
+          <button (click)="login()" type="button">Publicar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content-right">
+      <div class="ads">
+
+      </div>
+
+      <div class="chat">
+
+      </div>
+    </div>
+
+
+  </div>
+
 </body>
 
 </html>

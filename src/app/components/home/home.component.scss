@@ -53,6 +53,7 @@
             margin-left: 25px;
             border-radius: 6px;
         }
+
         span:hover {
             background: #f2f2f2;
             border-radius: 6px;
@@ -67,6 +68,16 @@
     }
 }
 
-body {
+.content {
     background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+
+    &-posts {
+        &-input {
+            > img {
+                border-radius: 50%;
+            }
+        }
+    }
 }
